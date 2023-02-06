@@ -1,7 +1,8 @@
 
 name = input("what is your name? ")
-# commenting test
-name="idiot"
+
 msg = "hello " + name + "!"
 
+print(msg)
+msg = 1+2
 print(msg)
