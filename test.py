@@ -1,8 +1,7 @@
-import requests
 
 name = input("what is your name? ")
 # commenting test
+name="idiot"
 msg = "hello " + name + "!"
 
-name="idiot"
 print(msg)
