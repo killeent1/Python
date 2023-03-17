@@ -1,8 +1,11 @@
+from jnpr.junos import Device
+from pprint import pprint
 
-name = input("what is your name? ")
+dev = Device(host='10.0.1.253', user='tkilleen', password='Cog@Lg1FGAVH:^T/%0g9')
 
-msg = "hello " + name + "!"
+dev.open()
+print(dev.connected)
+pprint(dev.facts)
 
-print(msg)
-msg = 1+2
-print(msg)
+dev.close()
+print(dev.connected)
