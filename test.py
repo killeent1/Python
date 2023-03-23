@@ -6,6 +6,7 @@ from pprint import pprint
 #hostname = input("Device hostname: ")
 #junos_username = input("JUNOS username: ")
 junos_username = "pyuser"
+junos_password = "PisaOy6be3zdhJPkLNm8"
 hosts = []
 
 '''open the hosts file for ssh access'''
@@ -20,8 +21,7 @@ except FileNotFoundError:
 for h in hosts:
     '''for each host in the file get password and get facts'''
     #junos_password = getpass("Password for : {}\n".format(h))
-    junos_password = "PisaOy6be3zdhJPkLNm8"
-    
+
     try:
         dev = Device(host=h, user=junos_username, passwd=junos_password)
         dev.open()
