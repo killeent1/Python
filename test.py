@@ -1,4 +1,3 @@
-import sys
 from jnpr.junos import Device
 from jnpr.junos.exception import ConnectError
 from getpass import getpass
@@ -6,7 +5,7 @@ from pprint import pprint
 
 #hostname = input("Device hostname: ")
 #junos_username = input("JUNOS username: ")
-junos_username = "tkilleen"
+junos_username = "pyuser"
 hosts = []
 
 '''open the hosts file for ssh access'''
@@ -21,6 +20,7 @@ except FileNotFoundError:
 for h in hosts:
     '''for each host in the file get password and get facts'''
     junos_password = getpass("Password for : {}\n".format(h))
+    
     try:
         dev = Device(host=h, user=junos_username, passwd=junos_password)
         dev.open()
@@ -32,9 +32,7 @@ for h in hosts:
     
     except ConnectError as err:
         print("Cannot connect to device: {0}".format(err))
-        sys.exit(1)
     except Exception as err:
         print(err)
-        sys.exit(1)
 
 print("end of script")
