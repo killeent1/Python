@@ -19,6 +19,7 @@ except FileNotFoundError:
     print("An exception occurred: File not found!")
 
 for h in hosts:
+    '''for each host in the file get password and get facts'''
     junos_password = getpass("Password for : {}\n".format(h))
     try:
         dev = Device(host=h, user=junos_username, passwd=junos_password)
