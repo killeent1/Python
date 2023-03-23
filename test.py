@@ -4,6 +4,10 @@ from jnpr.junos.exception import ConnectError
 from getpass import getpass
 from pprint import pprint
 
+f = open("hosts.txt", "r")
+for x in f:
+    print(x)
+f.close()
 
 hostname = input("Device hostname: ")
 junos_username = input("JUNOS username: ")
