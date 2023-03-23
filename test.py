@@ -13,7 +13,6 @@ hosts = []
 try:
     f = open("hosts.txt", "r")
     for x in f:
-        print(x)
         hosts.append(x.rstrip())
     f.close()
 except FileNotFoundError:
