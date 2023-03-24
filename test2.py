@@ -3,14 +3,14 @@ from ncclient.xml_ import *
 
 # device configs
 switches = [
-    {"host": "192.168.50.250", "port": "830", "username": "pyuser", "password": "PisaOy6be3zdhJPkLNm8"},
-    {"host": "192.168.50.253", "port": "830", "username": "pyuser", "password": "PisaOy6be3zdhJPkLNm8"}
+    {"host": "10.0.1.254", "port": "830", "password": "PisaOy6be3zdhJPkLNm8"},
+    {"host": "10.0.1.253", "port": "830", "password": "PisaOy6be3zdhJPkLNm8"}
 ]
 
 # loop through each switch and fetch data
 for switch in switches:
     # make initial connection and save session as variable m
-    with manager.connect(host=switch["host"], port=switch["port"], username=switch["username"], password=switch["password"], hostkey_verify=False, device_params={"name": "junos"}) as m:
+    with manager.connect(host=switch["host"], port=switch["port"], username="pyuser", password=switch["password"], hostkey_verify=False, device_params={"name": "junos"}) as m:
         # get config in xml format
         response = m.get_configuration(format='xml')
         host = response.xpath('configuration/system/host-name')[0].text
@@ -21,9 +21,10 @@ for switch in switches:
         
         for interface in interfaces:
             int_name = interface.xpath('name')[0].text
-            int_unit = interface.xpath('unit/name')[0].text
+            op_status = interface.xpath('physical-interface/oper-status')[0].text
             ip = []
             for name in interface.xpath('unit/family/inet/address/name'):
-                print(f"{int_name}.{int_unit} {ip}")
+                ip.append(name.text)
+            print(f"{int_name} {op_status} {ip}")
                 
 print("\nend of script")

@@ -3,11 +3,38 @@ from jnpr.junos.exception import ConnectError
 from getpass import getpass
 from pprint import pprint
 
-#hostname = input("Device hostname: ")
-#junos_username = input("JUNOS username: ")
+'''variables'''
 junos_username = "pyuser"
 junos_password = "PisaOy6be3zdhJPkLNm8"
 hosts = []
+
+'''function for command: show route'''
+def get_show_route(d):
+    routes_xml = d.rpc.get_route_information(table='inet.0')
+    routes = routes_xml.findall('.//rt')
+    for route in routes:
+        if route.findtext('rt-entry/protocol-name') != 'Local':
+            dest = route.findtext('rt-destination')
+            via = route.findtext('rt-entry/nh/via')
+            print(f"{dest} via {via}")
+            
+'''function for command: show vlans'''
+def get_show_vlans(d):
+    vlans_xml = d.rpc.get_vlan_information()
+    vlans = vlans_xml.findall('.//l2ng-l2ald-vlan-instance-group')
+    for vlan in vlans:
+        v = vlan.findtext('l2ng-l2rtb-vlan-name')
+        t = vlan.findtext('l2ng-l2rtb-vlan-tag')
+        print(f"{v} vlan {t}")
+
+'''function for command: show vlans'''
+def get_show_arp(d):
+    arp_xml = d.rpc.get_arp_table_information()
+    arp = arp_xml.findall('.//arp-table-entry')
+    for a in arp:
+        mac = a.findtext('mac-address')
+        ip = a.findtext('ip-address')
+        print(f"{mac} {ip}")
 
 '''open the hosts file for ssh access'''
 try:
@@ -26,8 +53,11 @@ for h in hosts:
         dev = Device(host=h, user=junos_username, passwd=junos_password)
         dev.open()
         print(dev.connected)
-        pprint(dev.facts)
-        
+        #pprint(dev.facts)
+        '''get routing information from device'''
+        #get_show_route(dev)
+        #get_show_vlans(dev)
+        get_show_arp(dev)
         dev.close()
         print(dev.connected)
     
