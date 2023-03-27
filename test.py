@@ -39,17 +39,24 @@ def get_show_arp(d):
 
 '''function for command: show route'''
 def get_show_interfaces(d):
+    '''required for dictionary creation'''
     interface_dict = {}
-    interfaces_xml = d.rpc.get_interface_information()
+    '''required for interface information from device'''
+    interfaces_xml = d.rpc.get_interface_information(terse=True)
+    '''required for hostname info'''
     system_info_xml = d.rpc.get_system_information()
+    '''find all physical attributes of the interface and save as a list'''
     interfaces = interfaces_xml.findall('.//physical-interface')
-    system_info = system_info_xml.findtext('host-name')
+    '''extract host-name from system info output'''
+    system_info = str(system_info_xml.findtext('host-name')).strip()
     for i in interfaces:
-        interface_dict['hostname'] = str(system_info).strip()
+        interface_dict['hostname'] = system_info
         interface_dict['name'] = str(i.findtext('name')).strip()
+        interface_dict['admin_status'] = str(i.findtext('admin-status')).strip()
         interface_dict['oper_status'] = str(i.findtext('oper-status')).strip()
         interface_dict['desc'] = str(i.findtext('description')).strip()
         print(interface_dict)
+        '''save each dictionary row into a list'''
 
 def save_file(dict):
     with open('marlow_connections.csv', mode='w') as csv_file:
@@ -59,35 +66,37 @@ def save_file(dict):
         file_writer.writerow()
         csv_file.close()
 
-
-'''open the hosts file for ssh access'''
-try:
-    f = open("hosts.txt", "r")
-    for x in f:
-        hosts.append(x.rstrip())
-    f.close()
-except FileNotFoundError:
-    print("An exception occurred: File not found!")
-
-for h in hosts:
-    '''for each host in the list get facts'''
+def main():
+    '''open the hosts file for ssh access'''
     try:
-        dev = Device(host=h, user=junos_username, passwd=junos_password)
-        dev.open()
-        print(dev.connected)
-        #pprint(dev.facts)
-        #get_show_route(dev)
-        #get_show_vlans(dev)
-        get_show_interfaces(dev)
-        #get_show_arp(dev)
-        
-        '''close connection to the device'''
-        dev.close()
-        print(dev.connected)
-    
-    except ConnectError as err:
-        print("Cannot connect to device: {0}".format(err))
-    except Exception as err:
-        print(err)
+        f = open("hosts.txt", "r")
+        for x in f:
+            hosts.append(x.rstrip())
+        f.close()
+    except FileNotFoundError:
+        print("An exception occurred: File not found!")
 
-print("end of script")
+    for h in hosts:
+        '''for each host in the list get facts'''
+        try:
+            dev = Device(host=h, user=junos_username, passwd=junos_password)
+            dev.open()
+            if dev.connected:
+                #pprint(dev.facts)
+                #get_show_route(dev)
+                #get_show_vlans(dev)
+                get_show_interfaces(dev)
+                #get_show_arp(dev)
+                '''close connection to the device'''
+                dev.close()
+
+        except ConnectError as err:
+            print("Cannot connect to device: {0}".format(err))
+        except Exception as err:
+            print(err)
+            
+    print("\nend of script")
+    
+if __name__ == "__main__":
+    main()
+    
