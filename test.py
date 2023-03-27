@@ -44,7 +44,7 @@ def get_show_interfaces(d):
     system_info_xml = d.rpc.get_system_information()
     interfaces = interfaces_xml.findall('.//physical-interface')
     system_info = system_info_xml.findtext('host-name')
-    print(system_info)l
+    print(system_info)
     for i in interfaces:
         interface_dict['name'] = str(i.findtext('name')).strip()
         interface_dict['oper_status'] = str(i.findtext('oper-status')).strip()
