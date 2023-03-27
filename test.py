@@ -1,6 +1,6 @@
 from jnpr.junos import Device
 from jnpr.junos.exception import ConnectError
-from getpass import getpass
+import csv
 from pprint import pprint
 
 '''variables'''
@@ -44,15 +44,21 @@ def get_show_interfaces(d):
     system_info_xml = d.rpc.get_system_information()
     interfaces = interfaces_xml.findall('.//physical-interface')
     system_info = system_info_xml.findtext('host-name')
-    print(system_info)
     for i in interfaces:
+        interface_dict['hostname'] = str(system_info).strip()
         interface_dict['name'] = str(i.findtext('name')).strip()
         interface_dict['oper_status'] = str(i.findtext('oper-status')).strip()
         interface_dict['desc'] = str(i.findtext('description')).strip()
         print(interface_dict)
 
-'''TODO
-get interface information: type'''
+def save_file(dict):
+    with open('marlow_connections.csv', mode='w') as csv_file:
+        fields = [dict]
+        file_writer = csv.DictWriter(csv_file, fieldnames=fields)
+        file_writer.writeheader()
+        file_writer.writerow()
+        csv_file.close()
+
 
 '''open the hosts file for ssh access'''
 try:
