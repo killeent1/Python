@@ -54,7 +54,6 @@ def get_show_interfaces(d):
         interface_dict['name'] = str(i.findtext('name')).strip()
         interface_dict['admin_status'] = str(i.findtext('admin-status')).strip()
         interface_dict['oper_status'] = str(i.findtext('oper-status')).strip()
-        interface_dict['desc'] = str(i.findtext('description')).strip()
         print(interface_dict)
         '''save each dictionary row into a list'''
 
