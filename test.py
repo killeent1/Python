@@ -31,10 +31,28 @@ def get_show_vlans(d):
 def get_show_arp(d):
     arp_xml = d.rpc.get_arp_table_information()
     arp = arp_xml.findall('.//arp-table-entry')
+    table = []
     for a in arp:
         mac = a.findtext('mac-address')
         ip = a.findtext('ip-address')
-        print(f"{mac} {ip}")
+        print(f"{mac}{ip}")
+
+'''function for command: show route'''
+def get_show_interfaces(d):
+    interface_dict = {}
+    interfaces_xml = d.rpc.get_interface_information()
+    system_info_xml = d.rpc.get_system_information()
+    interfaces = interfaces_xml.findall('.//physical-interface')
+    system_info = system_info_xml.findtext('host-name')
+    print(system_info)l
+    for i in interfaces:
+        interface_dict['name'] = str(i.findtext('name')).strip()
+        interface_dict['oper_status'] = str(i.findtext('oper-status')).strip()
+        interface_dict['desc'] = str(i.findtext('description')).strip()
+        print(interface_dict)
+
+'''TODO
+get interface information: type'''
 
 '''open the hosts file for ssh access'''
 try:
@@ -46,18 +64,18 @@ except FileNotFoundError:
     print("An exception occurred: File not found!")
 
 for h in hosts:
-    '''for each host in the file get password and get facts'''
-    #junos_password = getpass("Password for : {}\n".format(h))
-
+    '''for each host in the list get facts'''
     try:
         dev = Device(host=h, user=junos_username, passwd=junos_password)
         dev.open()
         print(dev.connected)
         #pprint(dev.facts)
-        '''get routing information from device'''
         #get_show_route(dev)
         #get_show_vlans(dev)
-        get_show_arp(dev)
+        get_show_interfaces(dev)
+        #get_show_arp(dev)
+        
+        '''close connection to the device'''
         dev.close()
         print(dev.connected)
     
