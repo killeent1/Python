@@ -1,0 +1,242 @@
+[
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "ge-0/0/0",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "gr-0/0/0",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "pfe-0/0/0",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "pfh-0/0/0",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "sxe-0/0/0",
+        "oper_status": "down"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "sxe-0/0/1",
+        "oper_status": "down"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "xe-0/0/1",
+        "oper_status": "down"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "ge-0/0/2",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "xe-0/0/3",
+        "oper_status": "down"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "ge-0/0/4",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "ge-0/0/6",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "ge-0/0/8",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "ge-0/0/14",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "ge-0/0/16",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "ge-0/0/36",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "ge-0/0/44",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "xe-0/0/46",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "xe-0/0/47",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "bme0",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "cbp0",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "dsc",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "em0",
+        "oper_status": "down"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "em1",
+        "oper_status": "down"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "em2",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "em3",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "esi",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "fti0",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "gre",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "ipip",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "irb",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "jsrv",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "lo0",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "lsi",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "mtun",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "pimd",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "pime",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "pip0",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "tap",
+        "oper_status": "up"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "vme",
+        "oper_status": "down"
+    },
+    {
+        "admin_status": "up",
+        "hostname": "DA_R-D_SW_1",
+        "name": "vtep",
+        "oper_status": "up"
+    }
+]

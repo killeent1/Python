@@ -1,6 +1,7 @@
 from jnpr.junos import Device
 from jnpr.junos.exception import ConnectError
 import csv
+import json
 from pprint import pprint
 
 '''variables'''
@@ -31,7 +32,6 @@ def get_show_vlans(d):
 def get_show_arp(d):
     arp_xml = d.rpc.get_arp_table_information()
     arp = arp_xml.findall('.//arp-table-entry')
-    table = []
     for a in arp:
         mac = a.findtext('mac-address')
         ip = a.findtext('ip-address')
@@ -39,8 +39,7 @@ def get_show_arp(d):
 
 '''function for command: show route'''
 def get_show_interfaces(d):
-    '''required for dictionary creation'''
-    interface_dict = {}
+    interface_list = []
     '''required for interface information from device'''
     interfaces_xml = d.rpc.get_interface_information(terse=True)
     '''required for hostname info'''
@@ -50,20 +49,31 @@ def get_show_interfaces(d):
     '''extract host-name from system info output'''
     system_info = str(system_info_xml.findtext('host-name')).strip()
     for i in interfaces:
+        interface_dict = {}
         interface_dict['hostname'] = system_info
         interface_dict['name'] = str(i.findtext('name')).strip()
         interface_dict['admin_status'] = str(i.findtext('admin-status')).strip()
         interface_dict['oper_status'] = str(i.findtext('oper-status')).strip()
-        print(interface_dict)
-        '''save each dictionary row into a list'''
+        interface_list.append(interface_dict)
+        print(interface_list)
+    with open('data.json', 'w', encoding='utf-8') as f:
+        json.dump(interface_list, f, ensure_ascii=False, indent=4, sort_keys=True)
+        print("saved file")
+    save_file(interface_list, system_info)
 
-def save_file(dict):
-    with open('marlow_connections.csv', mode='w') as csv_file:
-        fields = [dict]
-        file_writer = csv.DictWriter(csv_file, fieldnames=fields)
-        file_writer.writeheader()
-        file_writer.writerow()
-        csv_file.close()
+def save_file(my_list, system_name):
+    csv_columns = ['hostname','name','admin_status','oper_status']
+    filename = system_name+"_marlow_connections.csv"
+    try:
+        with open(filename, mode='w') as csv_file:
+            file_writer = csv.DictWriter(csv_file, fieldnames=csv_columns)
+            file_writer.writeheader()
+            for data in my_list:
+                file_writer.writerow(data)
+        print("\nsaved file.")
+    except IOError:
+        print("I/O Error")
+    
 
 def main():
     '''open the hosts file for ssh access'''
@@ -85,6 +95,7 @@ def main():
                 #get_show_route(dev)
                 #get_show_vlans(dev)
                 get_show_interfaces(dev)
+                print("\nFinished get_show_interfaces command")
                 #get_show_arp(dev)
                 '''close connection to the device'''
                 dev.close()
@@ -94,7 +105,7 @@ def main():
         except Exception as err:
             print(err)
             
-    print("\nend of script")
+    print("\nEnd of script")
     
 if __name__ == "__main__":
     main()
