@@ -23,9 +23,11 @@ def get_show_vlans(d):
     vlans_xml = d.rpc.get_vlan_information()
     vlans = vlans_xml.findall('.//l2ng-l2ald-vlan-instance-group')
     for vlan in vlans:
-        v = vlan.findtext('l2ng-l2rtb-vlan-name')
-        t = vlan.findtext('l2ng-l2rtb-vlan-tag')
-        print(f"{v} vlan {t}")
+        vlan_dict = {}
+        vlan_dict['vlan_name'] = str(vlan.findtext('l2ng-l2rtb-vlan-name')).strip()
+        vlan_dict['vlan_id'] = str(vlan.findtext('l2ng-l2rtb-vlan-tag')).strip()
+        vlan_dict['member_interfaces'] = str(vlan.findtext('l2ng-l2rtb-vlan-member')).strip()
+        print(vlan_dict)
 
 '''function for command: show vlans'''
 def get_show_arp(d):
@@ -97,9 +99,9 @@ def main():
             if dev.connected:
                 #pprint(dev.facts)
                 #get_show_route(dev)
-                #get_show_vlans(dev)
+                get_show_vlans(dev)
                 #get_show_interfaces(dev)
-                get_show_arp(dev)
+                #get_show_arp(dev)
                 '''close connection to the device'''
                 dev.close()
 
