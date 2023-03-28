@@ -1,0 +1,46 @@
+hostname,name,admin_status,oper_status,description,speed,link_mode,link_level_type
+DA_HQ_SW_1,ge-0/0/0,up,up,Office 365 server,Auto,Full-duplex,Ethernet
+DA_HQ_SW_1,pfe-0/0/0,up,up,None,800mbps,None,None
+DA_HQ_SW_1,pfh-0/0/0,up,up,None,800mbps,None,None
+DA_HQ_SW_1,ge-0/0/1,up,up,Desk 72,Auto,Full-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/2,up,down,Desk 73,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/3,up,down,Desk 75,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/4,up,down,Desk 74,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/5,up,down,Desk 76,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/6,up,up,None,Auto,Full-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/7,up,up,Desk 78,Auto,Full-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/8,up,up,None,Auto,Full-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/9,up,down,Desk 79,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/10,up,down,Desk 80,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/11,up,down,Desk 81,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/12,up,down,Desk 57,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/13,up,down,Desk 58,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/14,up,up,Desk 59,Auto,Full-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/15,up,up,Desk 60,Auto,Full-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/16,up,down,Desk 61,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/17,up,up,Desk 62,Auto,Full-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/18,up,up,Desk 63,Auto,Full-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/19,up,down,Desk 64,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/20,up,down,Desk 65,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/21,up,down,Desk 67,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/22,up,down,Desk 68,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,ge-0/0/23,up,down,Desk 66,Auto,Half-duplex,Ethernet
+DA_HQ_SW_1,xe-0/1/0,up,up,To DA_HQ_SW_0,10Gbps,None,Ethernet
+DA_HQ_SW_1,bme0,up,up,None,None,None,Ethernet
+DA_HQ_SW_1,cbp0,up,up,None,None,None,Ethernet
+DA_HQ_SW_1,dsc,up,up,None,None,None,None
+DA_HQ_SW_1,esi,up,up,None,Unlimited,None,VxLAN-Tunnel-Endpoint
+DA_HQ_SW_1,gre,up,up,None,Unlimited,None,GRE
+DA_HQ_SW_1,ipip,up,up,None,Unlimited,None,IP-over-IP
+DA_HQ_SW_1,irb,up,up,None,None,None,Ethernet
+DA_HQ_SW_1,jsrv,up,up,None,None,None,Ethernet
+DA_HQ_SW_1,lo0,up,up,None,None,None,None
+DA_HQ_SW_1,lsi,up,up,None,Unlimited,None,LSI
+DA_HQ_SW_1,me0,up,down,None,None,None,Ethernet
+DA_HQ_SW_1,mtun,up,up,None,Unlimited,None,GRE
+DA_HQ_SW_1,pimd,up,up,None,Unlimited,None,PIM-Decapsulator
+DA_HQ_SW_1,pime,up,up,None,Unlimited,None,PIM-Encapsulator
+DA_HQ_SW_1,pip0,up,up,None,None,None,Ethernet
+DA_HQ_SW_1,tap,up,up,None,Unlimited,None,Interface-Specific
+DA_HQ_SW_1,vme,up,down,None,None,None,Mgmt-VLAN
+DA_HQ_SW_1,vtep,up,up,None,Unlimited,None,VxLAN-Tunnel-Endpoint
