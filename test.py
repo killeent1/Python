@@ -30,11 +30,13 @@ def get_show_vlans(d):
 '''function for command: show vlans'''
 def get_show_arp(d):
     arp_xml = d.rpc.get_arp_table_information()
-    arp = arp_xml.findall('.//arp-table-entry')
-    for a in arp:
-        mac = a.findtext('mac-address')
-        ip = a.findtext('ip-address')
-        print(f"{mac}{ip}")
+    arp_table = arp_xml.findall('.//arp-table-entry')
+    for arp in arp_table:
+        arp_dict = {}
+        arp_dict['mac'] = str(arp.findtext('mac-address')).strip()
+        arp_dict['ip'] = str(arp.findtext('ip-address')).strip()
+        arp_dict['interface_name'] = str(arp.findtext('interface-name')).strip()
+        print(arp_dict)
 
 '''function for command: show route'''
 def get_show_interfaces(d):
@@ -57,8 +59,8 @@ def get_show_interfaces(d):
         interface_dict['oper_status'] = str(i.findtext('oper-status')).strip()
         interface_dict['description'] = str(i.findtext('description')).strip()
         interface_dict['speed'] = str(i.findtext('speed')).strip()
-        interface_dict['link_mode'] = str(i.findtext('link-mode')).strip()
-        interface_dict['link_level_type'] = str(i.findtext('link-level-type')).strip()
+        #interface_dict['link_mode'] = str(i.findtext('link-mode')).strip()
+        #interface_dict['link_level_type'] = str(i.findtext('link-level-type')).strip()
         '''add row to list'''
         interface_list.append(interface_dict)
     save_file(interface_list, system_hostname)
@@ -96,8 +98,8 @@ def main():
                 #pprint(dev.facts)
                 #get_show_route(dev)
                 #get_show_vlans(dev)
-                get_show_interfaces(dev)
-                #get_show_arp(dev)
+                #get_show_interfaces(dev)
+                get_show_arp(dev)
                 '''close connection to the device'''
                 dev.close()
 
