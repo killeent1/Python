@@ -19,14 +19,20 @@ def get_show_route(d):
             print(f"{dest} via {via}")
             
 '''function for command: show vlans'''
-def get_show_vlans(d):
+def get_show_vlans(d,h):
     vlans_xml = d.rpc.get_vlan_information()
     vlans = vlans_xml.findall('.//l2ng-l2ald-vlan-instance-group')
     for vlan in vlans:
         vlan_dict = {}
+        members_list = []
+        vlan_dict['device'] = h
         vlan_dict['vlan_name'] = str(vlan.findtext('l2ng-l2rtb-vlan-name')).strip()
         vlan_dict['vlan_id'] = str(vlan.findtext('l2ng-l2rtb-vlan-tag')).strip()
-        vlan_dict['member_interfaces'] = str(vlan.findtext('l2ng-l2rtb-vlan-member')).strip()
+        vlan_member = vlan.findall('l2ng-l2rtb-vlan-member')
+        for member in vlan_member:
+            x = str(member.findtext('l2ng-l2rtb-vlan-member-interface')).strip()
+            members_list.append(x)
+        vlan_dict['member_interfaces'] = members_list
         print(vlan_dict)
 
 '''function for command: show vlans'''
@@ -40,22 +46,25 @@ def get_show_arp(d):
         arp_dict['interface_name'] = str(arp.findtext('interface-name')).strip()
         print(arp_dict)
 
+def get_hostname(d):
+    '''required for hostname info'''
+    system_info_xml = d.rpc.get_system_information()
+    '''extract host-name from system info output as text/string'''
+    system_hostname = str(system_info_xml.findtext('host-name')).strip()
+    return system_hostname
+
 '''function for command: show route'''
-def get_show_interfaces(d):
+def get_show_interfaces(d,h):
     interface_list = []
     '''required for interface information from device'''
     interfaces_terse_xml = d.rpc.get_interface_information()
     '''required for hostname info'''
-    system_info_xml = d.rpc.get_system_information()
-    '''find all physical attributes of the interface and save as a list'''
     interfaces = interfaces_terse_xml.findall('.//physical-interface')
-    '''extract host-name from system info output'''
-    system_hostname = str(system_info_xml.findtext('host-name')).strip()
     
     for i in interfaces:
         '''make new dictionary per row'''
         interface_dict = {}
-        interface_dict['hostname'] = system_hostname
+        interface_dict['device'] = h
         interface_dict['name'] = str(i.findtext('name')).strip()
         interface_dict['admin_status'] = str(i.findtext('admin-status')).strip()
         interface_dict['oper_status'] = str(i.findtext('oper-status')).strip()
@@ -65,11 +74,11 @@ def get_show_interfaces(d):
         #interface_dict['link_level_type'] = str(i.findtext('link-level-type')).strip()
         '''add row to list'''
         interface_list.append(interface_dict)
-    save_file(interface_list, system_hostname)
+    save_file(interface_list, h)
 
-def save_file(my_list, system_name):
+def save_file(my_list, h):
     csv_columns = my_list[0].keys()
-    filename = system_name+"_marlow_connections.csv"
+    filename = h+"_marlow_connections.csv"
     try:
         with open(filename, mode='w', newline='') as csv_file:
             file_writer = csv.DictWriter(csv_file, fieldnames=csv_columns)
@@ -97,10 +106,11 @@ def main():
             dev = Device(host=h, user=junos_username, passwd=junos_password)
             dev.open()
             if dev.connected:
+                hostname = get_hostname(dev)
                 #pprint(dev.facts)
                 #get_show_route(dev)
-                get_show_vlans(dev)
-                #get_show_interfaces(dev)
+                get_show_vlans(dev, hostname)
+                get_show_interfaces(dev, hostname)
                 #get_show_arp(dev)
                 '''close connection to the device'''
                 dev.close()

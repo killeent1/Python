@@ -1,41 +1,41 @@
-hostname,name,admin_status,oper_status,description,speed,link_mode,link_level_type
-DA_R-D_SW_1,ge-0/0/0,up,up,Net Eng lab - Host 1 - Hypervisor,1000mbps,Full-duplex,Ethernet
-DA_R-D_SW_1,gr-0/0/0,up,up,None,800mbps,None,GRE
-DA_R-D_SW_1,pfe-0/0/0,up,up,None,800mbps,None,None
-DA_R-D_SW_1,pfh-0/0/0,up,up,None,800mbps,None,None
-DA_R-D_SW_1,sxe-0/0/0,up,down,None,1000mbps,Full-duplex,Ethernet
-DA_R-D_SW_1,sxe-0/0/1,up,down,None,1000mbps,Full-duplex,Ethernet
-DA_R-D_SW_1,xe-0/0/1,up,down,5GC Node3 - eth1,10Gbps,None,Ethernet
-DA_R-D_SW_1,ge-0/0/2,up,up,Net Eng lab - Host 2 - Hypervisor,1000mbps,Full-duplex,Ethernet
-DA_R-D_SW_1,xe-0/0/3,up,down,None,10Gbps,None,Ethernet
-DA_R-D_SW_1,ge-0/0/4,up,up,Net Eng lab - Host 3 - Hypervisor,1000mbps,Full-duplex,Ethernet
-DA_R-D_SW_1,ge-0/0/6,up,up,Net Eng lab - Host 1 - iDRAC,1000mbps,Full-duplex,Ethernet
-DA_R-D_SW_1,ge-0/0/8,up,up,Net Eng lab - Host 2 - iDRAC,1000mbps,Full-duplex,Ethernet
-DA_R-D_SW_1,ge-0/0/14,up,up,Host 3 primary port,1000mbps,Full-duplex,Ethernet
-DA_R-D_SW_1,ge-0/0/16,up,up,Host 3 secondary port,1000mbps,Full-duplex,Ethernet
-DA_R-D_SW_1,ge-0/0/36,up,up,Lab 091 - Cetin Lab,1000mbps,Full-duplex,Ethernet
-DA_R-D_SW_1,ge-0/0/44,up,up,CoMP ORAN Cisco FW (Public IP),1000mbps,Full-duplex,Ethernet
-DA_R-D_SW_1,xe-0/0/46,up,up,DA_R-D_SW_0,10Gbps,None,Ethernet
-DA_R-D_SW_1,xe-0/0/47,up,up,DA_HQ_SW_2,10Gbps,None,Ethernet
-DA_R-D_SW_1,bme0,up,up,None,None,None,Ethernet
-DA_R-D_SW_1,cbp0,up,up,None,None,None,Ethernet
-DA_R-D_SW_1,dsc,up,up,None,None,None,None
-DA_R-D_SW_1,em0,up,down,None,None,None,Ethernet
-DA_R-D_SW_1,em1,up,down,None,None,None,Ethernet
-DA_R-D_SW_1,em2,up,up,None,10Gbps,None,Ethernet
-DA_R-D_SW_1,em3,up,up,None,10Gbps,None,Ethernet
-DA_R-D_SW_1,esi,up,up,None,Unlimited,None,VxLAN-Tunnel-Endpoint
-DA_R-D_SW_1,fti0,up,up,None,Unlimited,None,Flexible-tunnel-Interface
-DA_R-D_SW_1,gre,up,up,None,Unlimited,None,GRE
-DA_R-D_SW_1,ipip,up,up,None,Unlimited,None,IP-over-IP
-DA_R-D_SW_1,irb,up,up,None,None,None,Ethernet
-DA_R-D_SW_1,jsrv,up,up,None,None,None,Ethernet
-DA_R-D_SW_1,lo0,up,up,None,None,None,None
-DA_R-D_SW_1,lsi,up,up,None,Unlimited,None,LSI
-DA_R-D_SW_1,mtun,up,up,None,Unlimited,None,GRE
-DA_R-D_SW_1,pimd,up,up,None,Unlimited,None,PIM-Decapsulator
-DA_R-D_SW_1,pime,up,up,None,Unlimited,None,PIM-Encapsulator
-DA_R-D_SW_1,pip0,up,up,None,None,None,Ethernet
-DA_R-D_SW_1,tap,up,up,None,Unlimited,None,Interface-Specific
-DA_R-D_SW_1,vme,up,down,None,None,None,Mgmt-VLAN
-DA_R-D_SW_1,vtep,up,up,None,Unlimited,None,VxLAN-Tunnel-Endpoint
+device,name,admin_status,oper_status,description,speed
+DA_R-D_SW_1,ge-0/0/0,up,up,Net Eng lab - Host 1 - Hypervisor,1000mbps
+DA_R-D_SW_1,gr-0/0/0,up,up,None,800mbps
+DA_R-D_SW_1,pfe-0/0/0,up,up,None,800mbps
+DA_R-D_SW_1,pfh-0/0/0,up,up,None,800mbps
+DA_R-D_SW_1,sxe-0/0/0,up,down,None,1000mbps
+DA_R-D_SW_1,sxe-0/0/1,up,down,None,1000mbps
+DA_R-D_SW_1,xe-0/0/1,up,down,5GC Node3 - eth1,10Gbps
+DA_R-D_SW_1,ge-0/0/2,up,up,Net Eng lab - Host 2 - Hypervisor,1000mbps
+DA_R-D_SW_1,xe-0/0/3,up,down,None,10Gbps
+DA_R-D_SW_1,ge-0/0/4,up,up,Net Eng lab - Host 3 - Hypervisor,1000mbps
+DA_R-D_SW_1,ge-0/0/6,up,up,Net Eng lab - Host 1 - iDRAC,1000mbps
+DA_R-D_SW_1,ge-0/0/8,up,up,Net Eng lab - Host 2 - iDRAC,1000mbps
+DA_R-D_SW_1,ge-0/0/14,up,up,Host 3 primary port,1000mbps
+DA_R-D_SW_1,ge-0/0/16,up,up,Host 3 secondary port,1000mbps
+DA_R-D_SW_1,ge-0/0/36,up,up,Lab 091 - Cetin Lab,1000mbps
+DA_R-D_SW_1,ge-0/0/44,up,up,CoMP ORAN Cisco FW (Public IP),1000mbps
+DA_R-D_SW_1,xe-0/0/46,up,up,DA_R-D_SW_0,10Gbps
+DA_R-D_SW_1,xe-0/0/47,up,up,DA_HQ_SW_2,10Gbps
+DA_R-D_SW_1,bme0,up,up,None,None
+DA_R-D_SW_1,cbp0,up,up,None,None
+DA_R-D_SW_1,dsc,up,up,None,None
+DA_R-D_SW_1,em0,up,down,None,None
+DA_R-D_SW_1,em1,up,down,None,None
+DA_R-D_SW_1,em2,up,up,None,10Gbps
+DA_R-D_SW_1,em3,up,up,None,10Gbps
+DA_R-D_SW_1,esi,up,up,None,Unlimited
+DA_R-D_SW_1,fti0,up,up,None,Unlimited
+DA_R-D_SW_1,gre,up,up,None,Unlimited
+DA_R-D_SW_1,ipip,up,up,None,Unlimited
+DA_R-D_SW_1,irb,up,up,None,None
+DA_R-D_SW_1,jsrv,up,up,None,None
+DA_R-D_SW_1,lo0,up,up,None,None
+DA_R-D_SW_1,lsi,up,up,None,Unlimited
+DA_R-D_SW_1,mtun,up,up,None,Unlimited
+DA_R-D_SW_1,pimd,up,up,None,Unlimited
+DA_R-D_SW_1,pime,up,up,None,Unlimited
+DA_R-D_SW_1,pip0,up,up,None,None
+DA_R-D_SW_1,tap,up,up,None,Unlimited
+DA_R-D_SW_1,vme,up,down,None,None
+DA_R-D_SW_1,vtep,up,up,None,Unlimited
