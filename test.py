@@ -1,12 +1,15 @@
 from jnpr.junos import Device
-from jnpr.junos.exception import ConnectError
+from jnpr.junos.exception import *
 import csv
+import json
 from pprint import pprint
+import multiprocessing
+import time
 
-'''variables'''
-junos_username = "pyuser"
-junos_password = "PisaOy6be3zdhJPkLNm8"
-hosts = []
+'''constants'''
+NUM_PROCESSES = 1
+USER = "pyuser"
+PASSWD = "PisaOy6be3zdhJPkLNm8"
 
 '''function for command: show route'''
 def get_show_route(d):
@@ -46,13 +49,6 @@ def get_show_arp(d):
         arp_dict['interface_name'] = str(arp.findtext('interface-name')).strip()
         print(arp_dict)
 
-def get_hostname(d):
-    '''required for hostname info'''
-    system_info_xml = d.rpc.get_system_information()
-    '''extract host-name from system info output as text/string'''
-    system_hostname = str(system_info_xml.findtext('host-name')).strip()
-    return system_hostname
-
 '''function for command: show route'''
 def get_show_interfaces(d,h):
     interface_list = []
@@ -91,6 +87,8 @@ def save_file(my_list, h):
     
     
 def main():
+    time_start = time.time()
+    hosts = []
     '''open the hosts file for ssh access'''
     try:
         f = open("hosts.txt", "r")
@@ -99,28 +97,34 @@ def main():
         f.close()
     except FileNotFoundError:
         print("An exception occurred: File not found!")
+    except:
+        print("Something went wrong :( ")
 
-    for h in hosts:
+    for ip_address in hosts:
         '''for each host in the list get facts'''
         try:
-            dev = Device(host=h, user=junos_username, passwd=junos_password)
+            dev = Device(host=ip_address, user=USER, passwd=PASSWD)
             dev.open()
+            '''if connected ... run the functions'''
             if dev.connected:
-                hostname = get_hostname(dev)
+                '''get the hostname of the device'''
+                hostname = dev.facts['hostname']
                 #pprint(dev.facts)
+                print(json.dumps(dev.facts))
                 #get_show_route(dev)
-                get_show_vlans(dev, hostname)
-                get_show_interfaces(dev, hostname)
+                #get_show_vlans(dev, hostname)
+                #get_show_interfaces(dev, hostname)
                 #get_show_arp(dev)
-                '''close connection to the device'''
+                '''close connection to the device once done'''
                 dev.close()
-
-        except ConnectError as err:
-            print("Cannot connect to device: {0}".format(err))
-        except Exception as err:
-            print(err)
+        except ConnectRefusedError:
+            print("%s: Error - Device connection refused!" % ip_address)
+        except ConnectTimeoutError:
+            print("%s: Error - Device connection timed out!" % ip_address)
+        except ConnectAuthError as err:
+            print(f"{err}: Error - Authentication failure for user {ip_address}")
             
-    print("\nEnd of script")
+    print("\nEnd of script: %f sec." % (time.time() - time_start))
     
 if __name__ == "__main__":
     main()
