@@ -74,7 +74,7 @@ def get_show_interfaces(d,h):
 
 def save_file(my_list, h):
     csv_columns = my_list[0].keys()
-    filename = h+"_marlow_connections.csv"
+    filename = h+"_marlow_vlans.csv"
     try:
         with open(filename, mode='w', newline='') as csv_file:
             file_writer = csv.DictWriter(csv_file, fieldnames=csv_columns)
@@ -110,9 +110,9 @@ def main():
                 '''get the hostname of the device'''
                 hostname = dev.facts['hostname']
                 #pprint(dev.facts)
-                print(json.dumps(dev.facts))
+                #print(json.dumps(dev.facts))
                 #get_show_route(dev)
-                #get_show_vlans(dev, hostname)
+                get_show_vlans(dev, hostname)
                 #get_show_interfaces(dev, hostname)
                 #get_show_arp(dev)
                 '''close connection to the device once done'''
