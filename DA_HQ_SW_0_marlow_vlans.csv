@@ -1,0 +1,74 @@
+device,name,admin_status,oper_status,description,speed
+DA_HQ_SW_0,ge-0/0/0,up,down,Desk 49,Auto
+DA_HQ_SW_0,pfe-0/0/0,up,up,None,800mbps
+DA_HQ_SW_0,pfh-0/0/0,up,up,None,800mbps
+DA_HQ_SW_0,ge-0/0/1,up,down,Desk 25,Auto
+DA_HQ_SW_0,ge-0/0/2,up,down,Desk 50,Auto
+DA_HQ_SW_0,ge-0/0/3,up,down,Desk 26,Auto
+DA_HQ_SW_0,ge-0/0/4,up,down,Desk 52,Auto
+DA_HQ_SW_0,ge-0/0/5,up,down,Desk 27,Auto
+DA_HQ_SW_0,ge-0/0/6,up,down,Desk 65 temporary,Auto
+DA_HQ_SW_0,ge-0/0/7,up,down,Desk 28,Auto
+DA_HQ_SW_0,ge-0/0/8,up,down,Desk 54,Auto
+DA_HQ_SW_0,ge-0/0/9,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/10,up,down,Lab_006 - Culham server,Auto
+DA_HQ_SW_0,ge-0/0/11,up,up,None,Auto
+DA_HQ_SW_0,ge-0/0/12,up,up,None,Auto
+DA_HQ_SW_0,ge-0/0/13,up,up,None,Auto
+DA_HQ_SW_0,ge-0/0/14,up,up,Desk 62,Auto
+DA_HQ_SW_0,ge-0/0/15,up,up,None,Auto
+DA_HQ_SW_0,ge-0/0/16,up,down,Desk 51,Auto
+DA_HQ_SW_0,ge-0/0/17,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/18,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/19,up,up,WiFi AP #1,Auto
+DA_HQ_SW_0,ge-0/0/20,up,down,Lab_009 - was ge-0/0/6 MRL-SW-Chassis,Auto
+DA_HQ_SW_0,ge-0/0/21,up,up,WiFi AP #2,Auto
+DA_HQ_SW_0,ge-0/0/22,up,up,Desk 86 - Sonia,Auto
+DA_HQ_SW_0,ge-0/0/23,up,up,WiFi AP #3,Auto
+DA_HQ_SW_0,ge-0/0/24,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/25,up,up,WiFi AP #4,Auto
+DA_HQ_SW_0,ge-0/0/26,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/27,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/28,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/29,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/30,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/31,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/32,up,up,None,Auto
+DA_HQ_SW_0,ge-0/0/33,up,up,None,Auto
+DA_HQ_SW_0,ge-0/0/34,up,up,None,Auto
+DA_HQ_SW_0,ge-0/0/35,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/36,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/37,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/38,up,up,None,Auto
+DA_HQ_SW_0,ge-0/0/39,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/40,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/41,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/42,up,down,Desk 22,Auto
+DA_HQ_SW_0,ge-0/0/43,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/44,up,down,None,Auto
+DA_HQ_SW_0,ge-0/0/45,up,up,None,Auto
+DA_HQ_SW_0,ge-0/0/46,up,up,None,Auto
+DA_HQ_SW_0,ge-0/0/47,up,up,None,Auto
+DA_HQ_SW_0,xe-0/2/0,up,up,LACP ae0 link to DA_HQ_FW,10Gbps
+DA_HQ_SW_0,xe-0/2/1,up,up,LACP ae0 link to DA_HQ_FW,10Gbps
+DA_HQ_SW_0,xe-0/2/2,up,up,DA_HQ_SW_1,10Gbps
+DA_HQ_SW_0,xe-0/2/3,up,up,DA_HQ_SW_2,10Gbps
+DA_HQ_SW_0,ae0,up,up,DA_HQ_FW,20Gbps
+DA_HQ_SW_0,bme0,up,up,None,None
+DA_HQ_SW_0,cbp0,up,up,None,None
+DA_HQ_SW_0,dsc,up,up,None,None
+DA_HQ_SW_0,esi,up,up,None,Unlimited
+DA_HQ_SW_0,gre,up,up,None,Unlimited
+DA_HQ_SW_0,ipip,up,up,None,Unlimited
+DA_HQ_SW_0,irb,up,up,None,None
+DA_HQ_SW_0,jsrv,up,up,None,None
+DA_HQ_SW_0,lo0,up,up,None,None
+DA_HQ_SW_0,lsi,up,up,None,Unlimited
+DA_HQ_SW_0,me0,up,down,None,None
+DA_HQ_SW_0,mtun,up,up,None,Unlimited
+DA_HQ_SW_0,pimd,up,up,None,Unlimited
+DA_HQ_SW_0,pime,up,up,None,Unlimited
+DA_HQ_SW_0,pip0,up,up,None,None
+DA_HQ_SW_0,tap,up,up,None,Unlimited
+DA_HQ_SW_0,vme,up,down,None,None
+DA_HQ_SW_0,vtep,up,up,None,Unlimited

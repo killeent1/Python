@@ -1,0 +1,48 @@
+device,name,admin_status,oper_status,description,speed
+ATT-SW,gr-0/0/0,up,up,None,800mbps
+ATT-SW,pfe-0/0/0,up,up,None,800mbps
+ATT-SW,pfh-0/0/0,up,up,None,800mbps
+ATT-SW,sxe-0/0/0,up,down,None,1000mbps
+ATT-SW,xe-0/0/0,up,up,MRL-SW-Chassis-node0 xe-0/0/1,10Gbps
+ATT-SW,sxe-0/0/1,up,down,None,1000mbps
+ATT-SW,xe-0/0/2,up,up,MRL-SW-Chassis-node1 xe-1/0/3,10Gbps
+ATT-SW,xe-0/0/21,up,up,None,10Gbps
+ATT-SW,xe-0/0/24,up,up,AT&T poc04 LACP ae1 (server 1),10Gbps
+ATT-SW,ge-0/0/26,up,up,Mavenir FibroLAN switch Mgmt,1000mbps
+ATT-SW,ge-0/0/28,up,up,AT&T poc04 iDRAC (server 1),1000mbps
+ATT-SW,xe-0/0/29,up,up,AT&T poc04 LACP ae1 (server 1),10Gbps
+ATT-SW,ge-0/0/30,up,up,AT&T poc04 mgmt (server 1),1000mbps
+ATT-SW,ge-0/0/32,up,up,Mavenir server 2 IDRAC,1000mbps
+ATT-SW,xe-0/0/35,up,up,AT&T poc01 data (server 4),10Gbps
+ATT-SW,ge-0/0/36,up,up,Mavenir server 3 IDRAC,1000mbps
+ATT-SW,xe-0/0/37,up,up,Mavenir server 5 S1-P2,10Gbps
+ATT-SW,xe-0/0/39,up,up,Mavenir server 5 S1-P1,10Gbps
+ATT-SW,ge-0/0/40,up,up,AT&T poc01 IDRAC (server 4),1000mbps
+ATT-SW,xe-0/0/41,up,up,Mavenir server 5 S2-P1,10Gbps
+ATT-SW,ge-0/0/42,up,up,AT&T poc01 Mgmt (server 4),1000mbps
+ATT-SW,xe-0/0/43,up,down,Mavenir server 5 S2-P2,10Gbps
+ATT-SW,ge-0/0/44,up,up,Mavenir server 5 IDRAC,1000mbps
+ATT-SW,ae0,up,down,Mavenir Server 3,Unspecified
+ATT-SW,ae1,up,up,AT&T poc04 data IPv6 (server 1),20Gbps
+ATT-SW,ae2,up,up,MRL-SW-Chassis ae6,20Gbps
+ATT-SW,bme0,up,up,None,None
+ATT-SW,cbp0,up,up,None,None
+ATT-SW,dsc,up,up,None,None
+ATT-SW,em0,up,down,None,None
+ATT-SW,em1,up,down,None,None
+ATT-SW,em2,up,up,None,1000mbps
+ATT-SW,em3,up,up,None,1000mbps
+ATT-SW,esi,up,up,None,Unlimited
+ATT-SW,gre,up,up,None,Unlimited
+ATT-SW,ipip,up,up,None,Unlimited
+ATT-SW,irb,up,up,None,None
+ATT-SW,jsrv,up,up,None,None
+ATT-SW,lo0,up,up,None,None
+ATT-SW,lsi,up,up,None,Unlimited
+ATT-SW,mtun,up,up,None,Unlimited
+ATT-SW,pimd,up,up,None,Unlimited
+ATT-SW,pime,up,up,None,Unlimited
+ATT-SW,pip0,up,up,None,None
+ATT-SW,tap,up,up,None,Unlimited
+ATT-SW,vme,up,down,None,None
+ATT-SW,vtep,up,up,None,Unlimited

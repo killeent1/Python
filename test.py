@@ -71,6 +71,13 @@ def get_show_interfaces(d,h):
         '''add row to list'''
         interface_list.append(interface_dict)
     save_file(interface_list, h)
+    
+def get_software_info(d,h):
+    version = d.facts['version']
+    serial = d.facts['serialnumber']
+    model = d.facts['model']
+    print(f"{h},{version},{serial},{model}")
+    
 
 def save_file(my_list, h):
     csv_columns = my_list[0].keys()
@@ -109,10 +116,10 @@ def main():
             if dev.connected:
                 '''get the hostname of the device'''
                 hostname = dev.facts['hostname']
+                get_software_info(dev, hostname)
                 #pprint(dev.facts)
-                #print(json.dumps(dev.facts))
                 #get_show_route(dev)
-                get_show_vlans(dev, hostname)
+                #get_show_vlans(dev, hostname)
                 #get_show_interfaces(dev, hostname)
                 #get_show_arp(dev)
                 '''close connection to the device once done'''
