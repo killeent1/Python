@@ -3,8 +3,8 @@ from ncclient.xml_ import *
 
 # device configs
 switches = [
-    {"host": "10.0.1.254", "port": "830", "password": "PisaOy6be3zdhJPkLNm8"},
-    {"host": "10.0.1.253", "port": "830", "password": "PisaOy6be3zdhJPkLNm8"}
+    {"host": "192.168.170.1", "port": "830", "password": "PisaOy6be3zdhJPkLNm8"},
+    {"host": "192.168.170.2", "port": "830", "password": "PisaOy6be3zdhJPkLNm8"}
 ]
 
 # loop through each switch and fetch data

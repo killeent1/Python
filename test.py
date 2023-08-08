@@ -120,8 +120,9 @@ def main():
                 #pprint(dev.facts)
                 #get_show_route(dev)
                 #get_show_vlans(dev, hostname)
-                get_show_interfaces(dev, hostname)
+                #get_show_interfaces(dev, hostname)
                 #get_show_arp(dev)
+                
                 '''close connection to the device once done'''
                 dev.close()
         except ConnectRefusedError:
