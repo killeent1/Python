@@ -1,0 +1,84 @@
+device,name,admin_status,oper_status,description,speed
+DA-MRL-SW-Chassis,vcp-255/0/14,up,up,None,10000mbps
+DA-MRL-SW-Chassis,vcp-255/0/15,up,up,None,10000mbps
+DA-MRL-SW-Chassis,ge-0/0/0,up,up,Desk_49 - Server Atoll,1000mbps
+DA-MRL-SW-Chassis,gr-0/0/0,up,up,None,800mbps
+DA-MRL-SW-Chassis,pfe-0/0/0,up,up,None,800mbps
+DA-MRL-SW-Chassis,pfh-0/0/0,up,up,None,800mbps
+DA-MRL-SW-Chassis,xe-0/0/1,up,up,DA-MRL-RED-SW0 xe-0/0/0,10Gbps
+DA-MRL-SW-Chassis,ge-0/0/2,up,up,Lab_007,1000mbps
+DA-MRL-SW-Chassis,ge-0/0/4,up,up,DA-MRL-HOST2 mgmt,1000mbps
+DA-MRL-SW-Chassis,xe-0/0/5,up,down,New server,10Gbps
+DA-MRL-SW-Chassis,ge-0/0/6,up,up,DA_HQ_FW ge-0/0/4,1000mbps
+DA-MRL-SW-Chassis,ge-0/0/8,up,down,Lab_011,1000mbps
+DA-MRL-SW-Chassis,ge-0/0/10,up,down,Lab_055,1000mbps
+DA-MRL-SW-Chassis,xe-0/0/11,up,up,DA-MRL-HOST2 ens5f0,10Gbps
+DA-MRL-SW-Chassis,xe-0/0/12,up,up,MRL-FW-Cluster node0 xe-0/0/16,10Gbps
+DA-MRL-SW-Chassis,ge-0/0/16,up,up,QNAP_NAS,1000mbps
+DA-MRL-SW-Chassis,xe-0/0/17,up,up,DA-MRL-HOST2 ens7f0,10Gbps
+DA-MRL-SW-Chassis,ge-0/0/18,up,up,DA-MRL-BLUE-SW0 ge-0/0/6,1000mbps
+DA-MRL-SW-Chassis,xe-0/0/19,up,up,None,10Gbps
+DA-MRL-SW-Chassis,xe-0/0/20,up,up,None,10Gbps
+DA-MRL-SW-Chassis,ge-0/0/21,up,up,SAN_Switch_Mgmt,1000mbps
+DA-MRL-SW-Chassis,xe-0/0/22,up,up,Host 1 - p1p1,10Gbps
+DA-MRL-SW-Chassis,ge-0/0/23,up,up,SAN_Mgmt,1000mbps
+DA-MRL-SW-Chassis,ge-0/1/0,up,up,DA-MRL-SYSV-FW0 mgmt,1000mbps
+DA-MRL-SW-Chassis,ge-0/1/2,up,up,Grafana Server - Shailesh B,1000mbps
+DA-MRL-SW-Chassis,ge-0/1/4,up,down,Lab_102 R&D side,1000mbps
+DA-MRL-SW-Chassis,ge-0/1/6,up,down,Mavenir server 5 iDRAC,1000mbps
+DA-MRL-SW-Chassis,ge-1/0/0,up,down,Lab_004,1000mbps
+DA-MRL-SW-Chassis,pfe-1/0/0,up,up,None,800mbps
+DA-MRL-SW-Chassis,pfh-1/0/0,up,up,None,800mbps
+DA-MRL-SW-Chassis,xe-1/0/1,up,up,Casa 5GC server,10Gbps
+DA-MRL-SW-Chassis,ge-1/0/2,up,up,Lab_003,1000mbps
+DA-MRL-SW-Chassis,xe-1/0/3,up,up,DA-MRL-RED-SW0 xe-0/0/2,10Gbps
+DA-MRL-SW-Chassis,ge-1/0/4,up,up,Lab_008,1000mbps
+DA-MRL-SW-Chassis,xe-1/0/5,up,up,Dell cluster node 2 - eno1,10Gbps
+DA-MRL-SW-Chassis,ge-1/0/6,up,down,Lab_010,1000mbps
+DA-MRL-SW-Chassis,ge-1/0/8,up,up,DA-MRL-BLUE-SW0 ge-0/0/8,1000mbps
+DA-MRL-SW-Chassis,ge-1/0/10,up,down,Lab_056,1000mbps
+DA-MRL-SW-Chassis,xe-1/0/11,up,up,DA-MRL-HOST2 ens7f0,10Gbps
+DA-MRL-SW-Chassis,xe-1/0/12,up,up,MRL-FW-Cluster node0 xe-0/0/17,10Gbps
+DA-MRL-SW-Chassis,xe-1/0/13,up,up,Casa 5GC server - eno3,10Gbps
+DA-MRL-SW-Chassis,ge-1/0/16,up,up,DA_HQ_FW ge-0/0/2,1000mbps
+DA-MRL-SW-Chassis,xe-1/0/17,up,up,DA-MRL-HOST2 ens7f1,10Gbps
+DA-MRL-SW-Chassis,ge-1/0/18,up,up,Casa 5GC server - iLO,1000mbps
+DA-MRL-SW-Chassis,xe-1/0/19,up,up,None,10Gbps
+DA-MRL-SW-Chassis,xe-1/0/20,up,up,None,10Gbps
+DA-MRL-SW-Chassis,ge-1/0/21,up,up,SAN_Switch_Mgmt,1000mbps
+DA-MRL-SW-Chassis,xe-1/0/22,up,up,Host 1 - p1p2,10Gbps
+DA-MRL-SW-Chassis,ge-1/0/23,up,up,SAN_Mgmt,1000mbps
+DA-MRL-SW-Chassis,ge-1/1/0,up,up,DA-MRL-GOLD-HOST iLO,1000mbps
+DA-MRL-SW-Chassis,ge-1/1/1,up,down,Airspan geNB test,1000mbps
+DA-MRL-SW-Chassis,ge-1/1/2,up,up,DA-MRL-HOST2 - iDrac,1000mbps
+DA-MRL-SW-Chassis,ge-1/1/3,up,down,Airspan geNB test,1000mbps
+DA-MRL-SW-Chassis,ge-1/1/4,up,up,New server,1000mbps
+DA-MRL-SW-Chassis,ge-1/1/6,up,up,Opengear OOB gateway - L2 switch,1000mbps
+DA-MRL-SW-Chassis,ae0,up,up,DA-MRL-HOST2 - DATA,20Gbps
+DA-MRL-SW-Chassis,ae2,up,up,Host_3_Mgmt,20Gbps
+DA-MRL-SW-Chassis,ae3,up,up,Host_3_Data,20Gbps
+DA-MRL-SW-Chassis,ae4,up,up,DA-MRL-SYSV-FW0,20Gbps
+DA-MRL-SW-Chassis,ae6,up,up,DA-MRL-RED-SW0 ae2,20Gbps
+DA-MRL-SW-Chassis,ae8,up,up,DA_HQ_FW ae2,2Gbps
+DA-MRL-SW-Chassis,ae9,up,up,DA-MRL-BLUE-SW0 ae2,2Gbps
+DA-MRL-SW-Chassis,bme0,up,up,None,None
+DA-MRL-SW-Chassis,bme1,up,up,None,1000mbps
+DA-MRL-SW-Chassis,cbp0,up,up,None,None
+DA-MRL-SW-Chassis,dsc,up,up,None,None
+DA-MRL-SW-Chassis,em0,up,down,None,None
+DA-MRL-SW-Chassis,em1,up,down,None,None
+DA-MRL-SW-Chassis,em2,up,up,None,1000mbps
+DA-MRL-SW-Chassis,esi,up,up,None,Unlimited
+DA-MRL-SW-Chassis,gre,up,up,None,Unlimited
+DA-MRL-SW-Chassis,ipip,up,up,None,Unlimited
+DA-MRL-SW-Chassis,irb,up,up,None,None
+DA-MRL-SW-Chassis,jsrv,up,up,None,None
+DA-MRL-SW-Chassis,lo0,up,up,None,None
+DA-MRL-SW-Chassis,lsi,up,up,None,Unlimited
+DA-MRL-SW-Chassis,mtun,up,up,None,Unlimited
+DA-MRL-SW-Chassis,pimd,up,up,None,Unlimited
+DA-MRL-SW-Chassis,pime,up,up,None,Unlimited
+DA-MRL-SW-Chassis,pip0,up,up,None,None
+DA-MRL-SW-Chassis,tap,up,up,None,Unlimited
+DA-MRL-SW-Chassis,vme,up,down,None,None
+DA-MRL-SW-Chassis,vtep,up,up,None,Unlimited

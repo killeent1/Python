@@ -1,0 +1,52 @@
+device,name,admin_status,oper_status,description,speed
+DA-MRL-RAD-3-TSW0,ge-0/0/0,up,up,Rack3 RU#1 - NMS,1000mbps
+DA-MRL-RAD-3-TSW0,gr-0/0/0,up,up,None,800mbps
+DA-MRL-RAD-3-TSW0,pfe-0/0/0,up,up,None,800mbps
+DA-MRL-RAD-3-TSW0,pfh-0/0/0,up,up,None,800mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/1,up,up,Rack 3 Fronthaul,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/2,up,down,Rack 3 Fronthaul,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/3,up,down,Rack 3 Fronthaul,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/4,up,down,Rack 3 Fronthaul,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/5,up,down,Rack 3 Fronthaul,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/6,up,up,Rack3 PDU,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/7,up,up,Dell6 mgmt iDrac,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/8,up,up,Kontron3 mgmt BMC,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/9,up,up,Rack 3 mgmt,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/10,up,down,Rack 3 mgmt,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/11,up,down,Rack 3 mgmt,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/12,up,up,Dell6 eno12399 CU OAM,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/13,up,up,Kontron3 DU OAM,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/14,up,up,Rack 3 OAM,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/15,up,down,Rack 3 OAM,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/16,up,down,Rack 3 OAM,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/17,up,down,Rack 3 OAM,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/18,up,down,Rack3 RU#2 - AIO,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/19,up,down,None,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/20,up,down,None,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/21,up,down,None,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/22,up,down,None,1000mbps
+DA-MRL-RAD-3-TSW0,ge-0/0/23,up,down,None,1000mbps
+DA-MRL-RAD-3-TSW0,xe-0/1/0,up,up,None,10Gbps
+DA-MRL-RAD-3-TSW0,xe-0/1/1,up,up,None,10Gbps
+DA-MRL-RAD-3-TSW0,xe-0/1/2,up,down,None,10Gbps
+DA-MRL-RAD-3-TSW0,xe-0/1/3,up,down,None,10Gbps
+DA-MRL-RAD-3-TSW0,xe-0/2/3,up,up,DA-MRL-RAD-1-DSW0 xe-0/0/45,10Gbps
+DA-MRL-RAD-3-TSW0,bme0,up,up,None,None
+DA-MRL-RAD-3-TSW0,cbp0,up,up,None,None
+DA-MRL-RAD-3-TSW0,dsc,up,up,None,None
+DA-MRL-RAD-3-TSW0,esi,up,up,None,Unlimited
+DA-MRL-RAD-3-TSW0,fti0,up,up,None,Unlimited
+DA-MRL-RAD-3-TSW0,gre,up,up,None,Unlimited
+DA-MRL-RAD-3-TSW0,ipip,up,up,None,Unlimited
+DA-MRL-RAD-3-TSW0,irb,up,up,None,None
+DA-MRL-RAD-3-TSW0,jsrv,up,up,None,None
+DA-MRL-RAD-3-TSW0,lo0,up,up,None,None
+DA-MRL-RAD-3-TSW0,lsi,up,up,None,Unlimited
+DA-MRL-RAD-3-TSW0,me0,up,down,None,None
+DA-MRL-RAD-3-TSW0,mtun,up,up,None,Unlimited
+DA-MRL-RAD-3-TSW0,pimd,up,up,None,Unlimited
+DA-MRL-RAD-3-TSW0,pime,up,up,None,Unlimited
+DA-MRL-RAD-3-TSW0,pip0,up,up,None,None
+DA-MRL-RAD-3-TSW0,tap,up,up,None,Unlimited
+DA-MRL-RAD-3-TSW0,vme,up,down,None,None
+DA-MRL-RAD-3-TSW0,vtep,up,up,None,Unlimited

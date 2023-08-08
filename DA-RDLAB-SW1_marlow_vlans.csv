@@ -1,0 +1,64 @@
+device,name,admin_status,oper_status,description,speed
+DA-RDLAB-SW1,ge-0/0/0,up,up,OSS Data Server - Andy Fernando,1000mbps
+DA-RDLAB-SW1,gr-0/0/0,up,up,None,800mbps
+DA-RDLAB-SW1,pfe-0/0/0,up,up,None,800mbps
+DA-RDLAB-SW1,pfh-0/0/0,up,up,None,800mbps
+DA-RDLAB-SW1,sxe-0/0/0,up,down,None,1000mbps
+DA-RDLAB-SW1,sxe-0/0/1,up,down,None,1000mbps
+DA-RDLAB-SW1,xe-0/0/1,up,up,5GC Node3 - eth1,10Gbps
+DA-RDLAB-SW1,ge-0/0/2,up,up,Net Eng lab - Host 2 - Hypervisor,1000mbps
+DA-RDLAB-SW1,xe-0/0/3,up,up,Dell Sandbox,10Gbps
+DA-RDLAB-SW1,ge-0/0/4,up,up,Net Eng lab - Host 3 - Hypervisor,1000mbps
+DA-RDLAB-SW1,ge-0/0/6,up,up,Net Eng lab - Host 1 - iDRAC,1000mbps
+DA-RDLAB-SW1,ge-0/0/8,up,up,Net Eng lab - Host 2 - iDRAC,1000mbps
+DA-RDLAB-SW1,xe-0/0/10,up,up,Server 5GC mgmt,10Gbps
+DA-RDLAB-SW1,ge-0/0/12,up,up,Raspberry Pi - Wayne VH,1000mbps
+DA-RDLAB-SW1,xe-0/0/13,up,up,dauk-mrl-kn-gdcv-host01 Port 1,10Gbps
+DA-RDLAB-SW1,xe-0/0/14,up,down,Raspberry Pi - Wayne VH,10Gbps
+DA-RDLAB-SW1,ge-0/0/16,up,down,Particle IO (Leo Meng),1000mbps
+DA-RDLAB-SW1,ge-0/0/18,up,up,Kontron-Host01_SRV5-BMC,1000mbps
+DA-RDLAB-SW1,ge-0/0/20,up,down,Kontron-Host02_SRV5-BMC,1000mbps
+DA-RDLAB-SW1,ge-0/0/22,up,down,Kontron-Host03_SRV5-BMC,1000mbps
+DA-RDLAB-SW1,xe-0/0/24,up,down,Lab 118,10Gbps
+DA-RDLAB-SW1,xe-0/0/25,up,up,dauk-mrl-kn-gdcv-host01 - data SW5,10Gbps
+DA-RDLAB-SW1,ge-0/0/26,up,up,iDrac,1000mbps
+DA-RDLAB-SW1,ge-0/0/28,up,up,iDrac,1000mbps
+DA-RDLAB-SW1,ge-0/0/30,up,up,iDrac,1000mbps
+DA-RDLAB-SW1,xe-0/0/31,up,down,dauk-mrl-kn-gdcv-host03 - data SW1,10Gbps
+DA-RDLAB-SW1,ge-0/0/32,up,down,iDrac,1000mbps
+DA-RDLAB-SW1,xe-0/0/33,up,down,dauk-mrl-kn-gdcv-host03 - data SW5,10Gbps
+DA-RDLAB-SW1,ge-0/0/34,up,up,Server - iDrac,1000mbps
+DA-RDLAB-SW1,xe-0/0/35,up,up,DA-MRL-RDLAB-FW0 xe-0/0/16,10Gbps
+DA-RDLAB-SW1,ge-0/0/36,up,up,Lab 091 - Cetin Lab,1000mbps
+DA-RDLAB-SW1,xe-0/0/37,up,down,dauk-mrl-dl-gdcv-host02 - data 1/0,10Gbps
+DA-RDLAB-SW1,ge-0/0/38,up,down,dauk-mrl-d-gdcv-host03_OB-P1,1000mbps
+DA-RDLAB-SW1,xe-0/0/39,up,down,dauk-mrl-dl-gdcv-host02 - data 2/0,10Gbps
+DA-RDLAB-SW1,ge-0/0/40,up,down,Wireshark Analyser Port - RESERVED,1000mbps
+DA-RDLAB-SW1,xe-0/0/41,up,down,Lab_M13,10Gbps
+DA-RDLAB-SW1,xe-0/0/42,up,up,dauk-mrl-gdcv-host01_S1-P0,10Gbps
+DA-RDLAB-SW1,xe-0/0/43,up,up,dauk-mrl-gdcv-host01_S1-P1,10Gbps
+DA-RDLAB-SW1,ge-0/0/44,up,up,CoMP ORAN Cisco FW (Public IP),1000mbps
+DA-RDLAB-SW1,xe-0/0/46,up,up,DA-RDLAB-SW0,10Gbps
+DA-RDLAB-SW1,xe-0/0/47,up,up,DA_HQ_SW_2,10Gbps
+DA-RDLAB-SW1,bme0,up,up,None,None
+DA-RDLAB-SW1,cbp0,up,up,None,None
+DA-RDLAB-SW1,dsc,up,up,None,None
+DA-RDLAB-SW1,em0,up,down,None,None
+DA-RDLAB-SW1,em1,up,down,None,None
+DA-RDLAB-SW1,em2,up,up,None,10Gbps
+DA-RDLAB-SW1,em3,up,up,None,10Gbps
+DA-RDLAB-SW1,esi,up,up,None,Unlimited
+DA-RDLAB-SW1,fti0,up,up,None,Unlimited
+DA-RDLAB-SW1,gre,up,up,None,Unlimited
+DA-RDLAB-SW1,ipip,up,up,None,Unlimited
+DA-RDLAB-SW1,irb,up,up,None,None
+DA-RDLAB-SW1,jsrv,up,up,None,None
+DA-RDLAB-SW1,lo0,up,up,None,None
+DA-RDLAB-SW1,lsi,up,up,None,Unlimited
+DA-RDLAB-SW1,mtun,up,up,None,Unlimited
+DA-RDLAB-SW1,pimd,up,up,None,Unlimited
+DA-RDLAB-SW1,pime,up,up,None,Unlimited
+DA-RDLAB-SW1,pip0,up,up,None,None
+DA-RDLAB-SW1,tap,up,up,None,Unlimited
+DA-RDLAB-SW1,vme,up,down,None,None
+DA-RDLAB-SW1,vtep,up,up,None,Unlimited

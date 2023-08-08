@@ -1,0 +1,38 @@
+device,name,admin_status,oper_status,description,speed
+DA-MRL-BLUE-SW0,ge-0/0/0,up,up,DA-MRL-BLUE-HOST1 iDrac,1000mbps
+DA-MRL-BLUE-SW0,gr-0/0/0,up,up,None,800mbps
+DA-MRL-BLUE-SW0,pfe-0/0/0,up,up,None,800mbps
+DA-MRL-BLUE-SW0,pfh-0/0/0,up,up,None,800mbps
+DA-MRL-BLUE-SW0,sxe-0/0/0,up,down,None,1000mbps
+DA-MRL-BLUE-SW0,sxe-0/0/1,up,down,None,1000mbps
+DA-MRL-BLUE-SW0,ge-0/0/2,up,up,DA-MRL-BLUE-HOST1 mgmt port 1,1000mbps
+DA-MRL-BLUE-SW0,ge-0/0/4,up,up,DA-MRL-BLUE-HOST1 mgmt port 2,1000mbps
+DA-MRL-BLUE-SW0,ge-0/0/6,up,up,MRL-SW-Chassis ge-0/0/18,1000mbps
+DA-MRL-BLUE-SW0,ge-0/0/8,up,up,MRL-SW-Chassis ge-1/0/8,1000mbps
+DA-MRL-BLUE-SW0,xe-0/0/13,up,up,DA-MRL-BLUE-HOST1 data port 1,10Gbps
+DA-MRL-BLUE-SW0,ge-0/0/46,up,up,LAB TESTING NR3.0,1000mbps
+DA-MRL-BLUE-SW0,ae0,up,up,DA-MRL-BLUE-HOST1 mgmt,2Gbps
+DA-MRL-BLUE-SW0,ae1,up,up,DA-MRL-BLUE-HOST1 data,10Gbps
+DA-MRL-BLUE-SW0,ae2,up,up,MRL-SW-Chassis ae9,2Gbps
+DA-MRL-BLUE-SW0,bme0,up,up,None,None
+DA-MRL-BLUE-SW0,cbp0,up,up,None,None
+DA-MRL-BLUE-SW0,dsc,up,up,None,None
+DA-MRL-BLUE-SW0,em0,up,down,None,None
+DA-MRL-BLUE-SW0,em1,up,down,None,None
+DA-MRL-BLUE-SW0,em2,up,up,None,10Gbps
+DA-MRL-BLUE-SW0,em3,up,up,None,10Gbps
+DA-MRL-BLUE-SW0,esi,up,up,None,Unlimited
+DA-MRL-BLUE-SW0,fti0,up,up,None,Unlimited
+DA-MRL-BLUE-SW0,gre,up,up,None,Unlimited
+DA-MRL-BLUE-SW0,ipip,up,up,None,Unlimited
+DA-MRL-BLUE-SW0,irb,up,up,None,None
+DA-MRL-BLUE-SW0,jsrv,up,up,None,None
+DA-MRL-BLUE-SW0,lo0,up,up,None,None
+DA-MRL-BLUE-SW0,lsi,up,up,None,Unlimited
+DA-MRL-BLUE-SW0,mtun,up,up,None,Unlimited
+DA-MRL-BLUE-SW0,pimd,up,up,None,Unlimited
+DA-MRL-BLUE-SW0,pime,up,up,None,Unlimited
+DA-MRL-BLUE-SW0,pip0,up,up,None,None
+DA-MRL-BLUE-SW0,tap,up,up,None,Unlimited
+DA-MRL-BLUE-SW0,vme,up,down,None,None
+DA-MRL-BLUE-SW0,vtep,up,up,None,Unlimited

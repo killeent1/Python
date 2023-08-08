@@ -8,20 +8,20 @@ DA_HQ_SW_1,ge-0/0/3,up,up,Desk 75,Auto
 DA_HQ_SW_1,ge-0/0/4,up,down,Desk 74,Auto
 DA_HQ_SW_1,ge-0/0/5,up,down,Desk 76,Auto
 DA_HQ_SW_1,ge-0/0/6,up,down,None,Auto
-DA_HQ_SW_1,ge-0/0/7,up,up,Desk 78,Auto
+DA_HQ_SW_1,ge-0/0/7,up,down,Desk 78,Auto
 DA_HQ_SW_1,ge-0/0/8,up,up,None,Auto
 DA_HQ_SW_1,ge-0/0/9,up,down,Desk 79,Auto
 DA_HQ_SW_1,ge-0/0/10,up,down,Desk 80,Auto
-DA_HQ_SW_1,ge-0/0/11,up,down,Desk 81,Auto
+DA_HQ_SW_1,ge-0/0/11,up,up,Desk 81,Auto
 DA_HQ_SW_1,ge-0/0/12,up,down,Desk 57,Auto
 DA_HQ_SW_1,ge-0/0/13,up,down,Desk 58,Auto
-DA_HQ_SW_1,ge-0/0/14,up,up,Desk 59,Auto
+DA_HQ_SW_1,ge-0/0/14,up,down,Desk 59,Auto
 DA_HQ_SW_1,ge-0/0/15,up,up,Desk 60,Auto
 DA_HQ_SW_1,ge-0/0/16,up,down,Desk 61,Auto
 DA_HQ_SW_1,ge-0/0/17,up,up,Desk 62,Auto
-DA_HQ_SW_1,ge-0/0/18,up,up,Desk 63,Auto
+DA_HQ_SW_1,ge-0/0/18,up,down,Desk 63,Auto
 DA_HQ_SW_1,ge-0/0/19,up,up,Desk 64,Auto
-DA_HQ_SW_1,ge-0/0/20,up,down,Desk 65,Auto
+DA_HQ_SW_1,ge-0/0/20,up,up,Desk 65,Auto
 DA_HQ_SW_1,ge-0/0/21,up,down,Desk 67,Auto
 DA_HQ_SW_1,ge-0/0/22,up,down,Desk 68,Auto
 DA_HQ_SW_1,ge-0/0/23,up,down,Desk 66,Auto

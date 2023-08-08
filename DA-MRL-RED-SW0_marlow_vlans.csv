@@ -1,0 +1,45 @@
+device,name,admin_status,oper_status,description,speed
+DA-MRL-RED-SW0,gr-0/0/0,up,up,None,800mbps
+DA-MRL-RED-SW0,pfe-0/0/0,up,up,None,800mbps
+DA-MRL-RED-SW0,pfh-0/0/0,up,up,None,800mbps
+DA-MRL-RED-SW0,sxe-0/0/0,up,down,None,1000mbps
+DA-MRL-RED-SW0,xe-0/0/0,up,up,MRL-SW-Chassis-node0 xe-0/0/1,10Gbps
+DA-MRL-RED-SW0,sxe-0/0/1,up,down,None,1000mbps
+DA-MRL-RED-SW0,xe-0/0/2,up,up,MRL-SW-Chassis-node1 xe-1/0/3,10Gbps
+DA-MRL-RED-SW0,xe-0/0/11,up,up,da-mrl-att-poc01 - ens3f1,10Gbps
+DA-MRL-RED-SW0,xe-0/0/15,up,up,da-mrl-att-poc01 - ens2f1,10Gbps
+DA-MRL-RED-SW0,xe-0/0/21,up,up,da-mrl-att-poc01 - ens3f0,10Gbps
+DA-MRL-RED-SW0,xe-0/0/25,up,up,da-mrl-att-poc04 - ens3f0,10Gbps
+DA-MRL-RED-SW0,ge-0/0/28,up,up,da-mrl-att-poc04 iDrac,1000mbps
+DA-MRL-RED-SW0,xe-0/0/29,up,up,da-mrl-att-poc04 - ens2f0,10Gbps
+DA-MRL-RED-SW0,ge-0/0/30,up,up,da-mrl-att-poc04 mgmt,1000mbps
+DA-MRL-RED-SW0,ge-0/0/32,up,up,Mikrotik Server,1000mbps
+DA-MRL-RED-SW0,ge-0/0/34,up,up,Server-5 mgmt,1000mbps
+DA-MRL-RED-SW0,xe-0/0/35,up,up,da-mrl-att-poc01 - ens2f0,10Gbps
+DA-MRL-RED-SW0,ge-0/0/36,up,up,Server-5 iDrac,1000mbps
+DA-MRL-RED-SW0,ge-0/0/40,up,up,da-mrl-att-poc01 iDrac,1000mbps
+DA-MRL-RED-SW0,ge-0/0/42,up,up,da-mrl-att-poc01 mgmt,1000mbps
+DA-MRL-RED-SW0,ge-0/0/46,up,up,Lab_006,1000mbps
+DA-MRL-RED-SW0,ae2,up,up,MRL-SW-Chassis ae6,20Gbps
+DA-MRL-RED-SW0,bme0,up,up,None,None
+DA-MRL-RED-SW0,cbp0,up,up,None,None
+DA-MRL-RED-SW0,dsc,up,up,None,None
+DA-MRL-RED-SW0,em0,up,down,None,None
+DA-MRL-RED-SW0,em1,up,down,None,None
+DA-MRL-RED-SW0,em2,up,up,None,1000mbps
+DA-MRL-RED-SW0,em3,up,up,None,1000mbps
+DA-MRL-RED-SW0,esi,up,up,None,Unlimited
+DA-MRL-RED-SW0,fti0,up,up,None,Unlimited
+DA-MRL-RED-SW0,gre,up,up,None,Unlimited
+DA-MRL-RED-SW0,ipip,up,up,None,Unlimited
+DA-MRL-RED-SW0,irb,up,up,None,None
+DA-MRL-RED-SW0,jsrv,up,up,None,None
+DA-MRL-RED-SW0,lo0,up,up,None,None
+DA-MRL-RED-SW0,lsi,up,up,None,Unlimited
+DA-MRL-RED-SW0,mtun,up,up,None,Unlimited
+DA-MRL-RED-SW0,pimd,up,up,None,Unlimited
+DA-MRL-RED-SW0,pime,up,up,None,Unlimited
+DA-MRL-RED-SW0,pip0,up,up,None,None
+DA-MRL-RED-SW0,tap,up,up,None,Unlimited
+DA-MRL-RED-SW0,vme,up,down,None,None
+DA-MRL-RED-SW0,vtep,up,up,None,Unlimited

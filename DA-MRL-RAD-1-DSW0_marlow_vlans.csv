@@ -1,0 +1,33 @@
+device,name,admin_status,oper_status,description,speed
+DA-MRL-RAD-1-DSW0,ge-0/0/0,up,up,DA-HQ-FW,1000mbps
+DA-MRL-RAD-1-DSW0,gr-0/0/0,up,up,None,800mbps
+DA-MRL-RAD-1-DSW0,pfe-0/0/0,up,up,None,800mbps
+DA-MRL-RAD-1-DSW0,pfh-0/0/0,up,up,None,800mbps
+DA-MRL-RAD-1-DSW0,sxe-0/0/0,up,down,None,1000mbps
+DA-MRL-RAD-1-DSW0,sxe-0/0/1,up,down,None,1000mbps
+DA-MRL-RAD-1-DSW0,xe-0/0/41,up,up,DA-MRL-RAD-1-TSW0 xe-0/2/3,10Gbps
+DA-MRL-RAD-1-DSW0,xe-0/0/43,up,up,DA-MRL-RAD-2-TSW0 xe-0/2/3,10Gbps
+DA-MRL-RAD-1-DSW0,xe-0/0/45,up,up,DA-MRL-RAD-3-TSW0 xe-0/2/3,10Gbps
+DA-MRL-RAD-1-DSW0,xe-0/0/47,up,up,DA-MRL-RAD-4-TSW0 xe-0/2/3,10Gbps
+DA-MRL-RAD-1-DSW0,bme0,up,up,None,None
+DA-MRL-RAD-1-DSW0,cbp0,up,up,None,None
+DA-MRL-RAD-1-DSW0,dsc,up,up,None,None
+DA-MRL-RAD-1-DSW0,em0,up,down,None,None
+DA-MRL-RAD-1-DSW0,em1,up,down,None,None
+DA-MRL-RAD-1-DSW0,em2,up,up,None,10Gbps
+DA-MRL-RAD-1-DSW0,em3,up,up,None,10Gbps
+DA-MRL-RAD-1-DSW0,esi,up,up,None,Unlimited
+DA-MRL-RAD-1-DSW0,fti0,up,up,None,Unlimited
+DA-MRL-RAD-1-DSW0,gre,up,up,None,Unlimited
+DA-MRL-RAD-1-DSW0,ipip,up,up,None,Unlimited
+DA-MRL-RAD-1-DSW0,irb,up,up,None,None
+DA-MRL-RAD-1-DSW0,jsrv,up,up,None,None
+DA-MRL-RAD-1-DSW0,lo0,up,up,None,None
+DA-MRL-RAD-1-DSW0,lsi,up,up,None,Unlimited
+DA-MRL-RAD-1-DSW0,mtun,up,up,None,Unlimited
+DA-MRL-RAD-1-DSW0,pimd,up,up,None,Unlimited
+DA-MRL-RAD-1-DSW0,pime,up,up,None,Unlimited
+DA-MRL-RAD-1-DSW0,pip0,up,up,None,None
+DA-MRL-RAD-1-DSW0,tap,up,up,None,Unlimited
+DA-MRL-RAD-1-DSW0,vme,up,down,None,None
+DA-MRL-RAD-1-DSW0,vtep,up,up,None,Unlimited
